@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "dc1284a9-cee1-4721-8261-cc08797487de",
+		"name": "TestWork",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TestWork",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "api_token",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "3QeqRzrtP4jq2VvZ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/search?attribute=name&type=ASC&search=em",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "attribute",
+							"value": "name",
+							"description": "Аттрибут для сортировки"
+						},
+						{
+							"key": "type",
+							"value": "ASC",
+							"description": "Метод сортировки  ['ASC', 'DESC']"
+						},
+						{
+							"key": "search",
+							"value": "em",
+							"description": "search text"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
